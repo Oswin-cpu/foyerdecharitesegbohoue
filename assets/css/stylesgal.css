@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+
+.redressed {
+	font-family: 'Redressed', cursive;
+}
+
+.merriweather {
+	font-family: 'Merriweather', serif;
+}
+
+.cc-navbar {
+	background-color: rgba(0, 0, 0, 0.55);
+	font-family: 'Merriweather', serif;
+	box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+	z-index: 99;
+}
+
+.cc-navbar .nav-link {
+	border-bottom: 1px solid transparent;
+	transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+}
+
+.cc-navbar .nav-link:hover {
+	padding-bottom: 20px;
+	border-bottom-color: var(--bs-warning);
+}
+
+.banner,
+.order-form {
+	background: url('../img/img.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 800px;
+    background-color: rgb(214, 214, 214);
+
+}
+
+.order-form {
+	height: 500px;
+}
+
+.banner .banner-desc h1 {
+	font-size: 48px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.cc-menu {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banniere5.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 1200px;
+}
+
+.btn-order {
+	color: var(--bs-warning);
+	transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+	color: #fff;
+	background-color: var(--bs-warning);
+}
+
+
+.min {
+	display: grid;
+	grid-template-columns: repeat(3,200px);
+	grid-gap: 1em;
+  }
+.img {
+	width: 100%; /* need to overwrite inline dimensions */
+	height: auto;
+  }
+.img-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
+}
+
+.img-gallery img {
+    width: 100%;
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 500px;
+    margin-top: 2rem;
+}
+
+.img-gallery img:nth-child(even):hover {
+    transform: scale(.8) rotate(15deg);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.img-gallery img:nth-child(odd):hover {
+    transform: scale(.8) rotate(-15deg);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+span {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    z-index: 100;
+}
