@@ -4,29 +4,29 @@
 <?php
   if(!empty($_FILES)){
         require("ClassImage.php");
-        
+
        $img=$_FILES['img'];
        $ext=strtolower(substr($img['name'], -3));
        $allow_ext=array("jpg", "png", "gif");
-        
+
        if (in_array($ext,$allow_ext)) {
            # code...
            move_uploaded_file($img['tmp_name'],"Images/".$img['name']);
            Img::creerMin("Images/".$img['name'],"Images/min",$img['name'], 286,180);
-           
+
         }
         else
         {
            $erreur="Votre fichier n'est pas une image";
        }
-      
-        
+
+
     }
-        
-    
-    
-    
-       
+
+
+
+
+
 ?>
 <?php require 'Connexion.php';
 if($_SERVER["REQUEST_METHOD"]== "POST")
@@ -65,7 +65,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
         });0
         </script>
     <title>Galerie</title>
-    
+
 </head>
 
 <body class="order-form" style="background-color:#d6d6d6">
@@ -99,7 +99,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
                         <div class="col mb-5 trans">
                         <div class="card" style="width: 18rem">
                             <div class="min">
-        
+
                                 <a class="zoombox" href="<?php echo $données['chemin_img']; ?>">
                                     <img id="img" src="<?php echo $données['chemin_min']; ?>" alt="zagh"/>
                                     <style>
@@ -111,9 +111,9 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
                                         }
                                     </style>
                                 </a>
-        
+
             </div>
-            
+
             <?php
                 if (isset($_SESSION['connecte'])){
                     ?>
@@ -122,20 +122,20 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
                     echo '<a  href="Deleteimg.php?id='?><?php echo $données['id'] ?><?php echo '">'?><?php echo '<i class="btn btn-danger fa fa-trash-o"></i></a>';
                     echo '</div>';
                     }
-            
+
             ?>
-             
+
             <?php
 
 
 
 ?>
             </i></a>
-           
-            
+
+
         </div>
         </div>
-    <?php 
+    <?php
    }
 ?>
 </div>

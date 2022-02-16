@@ -15,16 +15,16 @@
 		<link rel="stylesheet" href="assets/css/styles.css" />
 
 		<title>Le foyer de Charité</title>
-		
+
 	</head>
-	<body >
+	<body  style="background-color:#d6d6d6">
 		<header>
 			<?php require_once('Includes/header.php') ?>
 		</header>
     	<section class="banner d-flex justify-content-center align-items-center">
 			<br>
 			<br>
-		
+
 				<div class="container-fluid" style="">
 					<div class="row" style="text-align:center">
 						<div class="col-md-8 banner-desc center">
@@ -32,7 +32,7 @@
 
 								<p style="text-align:center;"> Le Foyer de charité : Déconnecter, se ressourcer, vivifier sa foi . </p>
 								<p>  Une halte pour le coeur et l'esprit. <br /></p>
-								
+
 							</h1>
 						</div>
 					</div>
@@ -95,7 +95,7 @@
                 			<br>
                 			<p class="card-text">
                 				Les Foyers de charité, co-fondés en 1936 par Marthe Robin et le père Georges Finet, sont des communautés qui rassemblent des
-                				laïcs, hommes et femmes, célibataires ou mariés, et des prêtres.À l’exemple des premiers chrétiens, ils vivent ensemble et 
+                				laïcs, hommes et femmes, célibataires ou mariés, et des prêtres.À l’exemple des premiers chrétiens, ils vivent ensemble et
                 				mettent en commun leurs biens et leurs compétences. La prière y tient une place prépondérante.Leur mission principale est de
                 				contribuer à la « nouvelle évangélisation » par le moyen de retraites spirituelles. Ils fontpartie de l'Église catholique
             				</p>
@@ -148,7 +148,7 @@
                  			<br>
 								<p class="card-text">
 										L'Abbé Marc HOUNON est le prêtre responsable du Foyer de charité de Sebgohoue depuis[année de prise en charge].
-										Il fut nommé prêtre suite à sa formation de ... [années de formations, pays dans lequel il a été formé].C'est un 
+										Il fut nommé prêtre suite à sa formation de ... [années de formations, pays dans lequel il a été formé].C'est un
 										homme ...[ses qualités]
 								</p>
 						</div>

@@ -1,6 +1,6 @@
 <?php
     session_start();
-	
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +16,12 @@
 		<link rel="stylesheet" href="assets/css/stylesprog.css" />
 
 		<title>Programme</title>
-	
+
 	<body class="order-form" style="background-color:#d6d6d6">
 	<header>
 			<?php require_once('Includes/header.php') ?>
 		</header>
-    
+
 
 		<section >
 			<br>
@@ -35,10 +35,10 @@
             				<h2 class="text-center ">PROGRAMME</h2>
         				</div>
     				</div>
-	
-							
+
+
 					<?php
-    
+
     					$bdd = new PDO('mysql:host=localhost;dbname=foyer', 'root', '');
         				$reponse = $bdd->query('SELECT * FROM programme');
     				?>
@@ -61,7 +61,7 @@
 								<?php
 									if (isset($_SESSION['connecte'])){
 											echo'
-											
+
 											<a  href="MajProgramme.php?id='?><?php echo $données['id'] ?><?php echo '"><i class="btn btn-warning far fa-edit"></i></a>
 											<a  href="DeleteProgramme.php?id='?><?php echo $données['id'] ?><?php echo '"><i class="btn btn-danger fa fa-trash-o"></i></a>
 											';
@@ -72,7 +72,7 @@
 						</div>
 						<?php
 						}
-                        ?>	
+                        ?>
 		</section>
 
 		<footer class="bg-dark text-light text-left ">
@@ -81,5 +81,5 @@
 
 		<script src="assets/js/bootstrap.bundle.min.js"></script>
 	</body>
-        
+
 </html>
